@@ -35,6 +35,8 @@ All colors MUST be HSL for consistency and theming.
     --muted-foreground: 215 15% 45%;
     --card: 0 0% 100%;
     --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
 
     /* Interactive States */
     --border: 210 20% 92%;
