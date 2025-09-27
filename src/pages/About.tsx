@@ -5,6 +5,10 @@ import { Heart, Target, Users, Award, BookOpen, Globe } from 'lucide-react';
 const About = () => {
   return (
     <div className="min-h-screen">
+      {/* Debug: Visible test element */}
+      <div style={{backgroundColor: 'red', color: 'white', padding: '20px', fontSize: '24px'}}>
+        DEBUG: About page is loading! If you see this, the page renders but CSS might be the issue.
+      </div>
       <Navigation />
       <main>
         {/* Hero Section */}
