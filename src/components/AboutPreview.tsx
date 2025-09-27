@@ -12,14 +12,14 @@ const AboutPreview = () => {
               About Shapers
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Shapers is a youth-led organization dedicated to transforming education 
-              in rural Kenya. We believe every learner deserves access to quality 
-              education and the tools needed to succeed in the digital age.
+              Shapers is a registered youth-led organization committed to advancing quality 
+              education and equality for learners in rural communities. Guided by the belief 
+              that every child deserves equal opportunities to learn and thrive.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Through our innovative programs, we provide mobile libraries, computer 
-              laboratories, industry exposure, and teacher collaboration platforms 
-              that bridge the gap between traditional and digital learning.
+              Through our Mobile Library (MobiLib) and Mobile Computer Laboratory (MobiLab), 
+              we bring books, digital tools, and modern learning resources directly to 
+              underserved students in rural areas.
             </p>
             <Button variant="gradient" className="hover-lift">
               Read Our Full Story
@@ -41,7 +41,8 @@ const AboutPreview = () => {
               <Target className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-display font-semibold text-xl mb-2">Our Mission</h3>
               <p className="text-muted-foreground">
-                Bridge the education gap in rural Kenya through innovative learning solutions
+                To bridge the education gap in rural Kenya by providing learning resources, 
+                digital access, and holistic capacity-building that empowers learners to reach their full potential
               </p>
             </div>
 

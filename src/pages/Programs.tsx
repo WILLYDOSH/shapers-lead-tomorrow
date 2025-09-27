@@ -1,98 +1,124 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { BookOpen, Laptop, Eye, Users, Trophy, ArrowRight, MapPin, Clock, Target } from 'lucide-react';
+import { BookOpen, Computer, Lightbulb, Eye, Users, Trophy, ArrowRight, MapPin, Clock, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const programs = [
   {
     id: 'mobilib',
     title: 'MobiLib',
-    subtitle: 'Mobile Library Program',
-    description: 'Bringing books and learning resources directly to rural communities through our mobile library service.',
-    fullDescription: 'MobiLib addresses the critical shortage of books and reading materials in rural schools and communities. Our mobile library visits remote areas on a regular schedule, providing access to textbooks, storybooks, educational materials, and digital resources. We also conduct reading sessions and literacy programs.',
+    subtitle: 'Mobile Library',
+    description: 'Bringing education directly to rural learners through our fully equipped mobile library.',
+    fullDescription: `The Mobile Library (MobiLib) is a flagship program by Shapers, designed to transform access to education for learners in rural and marginalized communities. Education is a fundamental right, yet thousands of learners in rural areas remain at a disadvantage due to limited access to quality learning materials. This disparity creates a widening gap between them and their peers in more privileged settings.
+
+MobiLib seeks to bridge this divide by bringing education directly to the learners. Through a fully equipped truck, MobiLib carries modern learning resources including textbooks, storybooks, and revision materials, ensuring that learners in underserved regions have access to the same quality of resources as those in urban schools. The mobile library operates on a rotational basis, reaching different communities periodically and creating opportunities for consistent academic growth.
+
+Beyond access to books, MobiLib fosters a culture of reading, curiosity, and lifelong learning. It inspires learners to dream beyond their immediate circumstances, empowering them with the tools they need to excel academically and pursue their aspirations. By levelling the playing field, MobiLib not only supports individual learners but also contributes to building stronger, more knowledgeable communities.
+
+With MobiLib, Shapers is driving equal opportunity in education - one stop at a time.`,
     icon: BookOpen,
     color: 'text-primary',
     bgColor: 'bg-primary/10',
     features: [
-      'Over 2,000 books covering various subjects and age groups',
-      'Regular scheduled visits to remote communities',
-      'Reading clubs and literacy programs',
-      'Teacher training on reading instruction',
-      'Digital resources and e-books access'
+      'Fully equipped mobile library truck',
+      'Modern textbooks and learning materials',
+      'Storybooks and reading resources',
+      'Rotational community visits',
+      'Culture of reading promotion'
     ],
-    impact: '15 communities served monthly, 500+ active readers'
+    impact: 'Thousands of learners reached across rural Kenya'
   },
   {
     id: 'mobilab',
     title: 'MobiLab',
     subtitle: 'Mobile Computer Laboratory',
-    description: 'Providing digital access and technology skills training through mobile computer laboratories.',
-    fullDescription: 'MobiLab brings computer literacy and digital skills to areas with limited or no internet connectivity. Our mobile computer labs are equipped with laptops, tablets, and offline educational software, enabling students to learn essential digital skills.',
-    icon: Laptop,
+    description: 'Bridging the digital divide with mobile computer laboratories for rural communities.',
+    fullDescription: `The Mobile Computer Laboratory (MobiLab) is an innovative program by Shapers, dedicated to transforming access to digital learning for students in rural and underserved communities. At its core, the program seeks to bridge the widening digital divide that continues to disadvantage learners in less privileged regions compared to their peers in urban and well-resourced areas.
+
+MobiLab envisions a future where every learner, regardless of their background, has the opportunity to interact with modern technology and acquire the digital skills necessary for success in the 21st century. To achieve this, the program introduces a fully equipped, state-of-the-art truck fitted with computers and digital learning devices. This mobile facility travels to schools and community centres in rural areas, creating a unique opportunity for learners to periodically access hands-on computer training and digital education resources.
+
+By doing so, MobiLab ensures that learners in rural areas are not left behind in the fast-paced evolution of technology. Students gain exposure to critical areas such as basic computer literacy, digital research skills, and emerging innovations including Artificial Intelligence (AI). This early exposure enhances their capacity to compete academically and professionally in an increasingly digital world.
+
+Ultimately, MobiLab is more than a truck, it is a moving gateway to opportunity, nurturing curiosity, levelling the educational playing field, and empowering rural learners to thrive in a technology-driven future.`,
+    icon: Computer,
     color: 'text-secondary',
     bgColor: 'bg-secondary/10',
     features: [
-      'Fully equipped mobile computer laboratory',
-      'Basic to advanced computer literacy training',
-      'Offline educational software and resources',
-      'Digital citizenship and online safety training',
-      'Certification programs for completed courses'
+      'State-of-the-art mobile computer lab',
+      'Hands-on computer training',
+      'Digital literacy programs',
+      'AI and technology exposure',
+      'Community centre partnerships'
     ],
-    impact: '300+ students trained in digital skills annually'
+    impact: 'Empowering rural learners for the digital future'
   },
   {
     id: 'inventio',
     title: 'Inventio',
-    subtitle: 'Industry Exposure Program',
-    description: 'Industry visits and career exposure to inspire and guide students toward their future paths.',
-    fullDescription: 'Inventio connects rural students with professional environments and career opportunities they might never have encountered. Through organized industry visits, mentorship programs, and career guidance sessions, we help students understand various career paths and requirements.',
-    icon: Eye,
+    subtitle: 'Discovery Platform',
+    description: 'Connecting classroom learning with real-world industry experiences.',
+    fullDescription: `The Inventio Program is a transformative discovery platform designed to bridge the gap between classroom learning and the real world. At its core, the program seeks to ignite curiosity, nurture passion, and inspire innovation among learners by immersing them in real-industry environments.
+
+Through carefully structured industry visits, learners are taken beyond the walls of their schools and introduced to practical spaces where theory meets application. Whether it is a factory, a technology hub, a media house, or an agricultural enterprise, students experience first-hand how industries operate, interact with professionals, and witness the processes that drive the world of work. This exposure not only enriches their understanding of different career paths but also empowers them to make informed choices about their future.
+
+The Inventio Program is built on the belief that young people learn best when they see, touch, and engage with what inspires them. By giving learners this early head starts, the program sharpens their sense of discovery, fuels their creativity, and strengthens their resolve to pursue fields they are genuinely passionate about.`,
+    icon: Lightbulb,
     color: 'text-accent',
     bgColor: 'bg-accent/10',
     features: [
-      'Industry visits to tech companies, hospitals, and other organizations',
-      'Mentorship programs with professionals',
-      'Career guidance and counseling sessions',
-      'Scholarship and opportunity matching',
-      'Alumni network for ongoing support'
+      'Structured industry visits',
+      'Real-world learning experiences',
+      'Professional interactions',
+      'Career path exploration',
+      'Hands-on engagement opportunities'
     ],
-    impact: '200+ students exposed to various career paths yearly'
+    impact: 'Inspiring learners to discover their passions'
   },
   {
     id: 'paragon',
     title: 'Paragon Plaza',
-    subtitle: 'Teacher Collaboration Hub',
-    description: 'A collaboration platform for teachers to share resources, best practices, and support each other.',
-    fullDescription: 'Paragon Plaza addresses teacher isolation and resource shortage by creating a collaborative network where educators can share teaching materials, discuss challenges, and learn from each other. The platform includes both online and offline components.',
+    subtitle: 'Teacher Collaboration Platform',
+    description: 'Creating collaborative ecosystems for rural teachers to share knowledge and best practices.',
+    fullDescription: `At Shapers, we recognize the invaluable role teachers play in advancing the cause of basic education. To strengthen this impact, we have established the Paragon Plaza, a dynamic and inclusive platform designed specifically for teachers in rural schools across Kenya. The Paragon Plaza serves as an open space where educators can meet, interact, and collaborate, sharing their experiences, challenges, and innovative solutions.
+
+This initiative goes beyond simple networking. It creates a collaborative ecosystem where teachers collectively nurture young minds, ensuring that learners in rural areas gain access not only to quality instruction but also to a diverse pool of knowledge and best practices. By bringing educators together, the program fosters mentorship, peer learning, and the exchange of practical strategies that directly enhance classroom outcomes.
+
+For learners, the Paragon Plaza opens doors to a world of possibilities. It is a space where they can engage with the best minds in their rural settings, benefit from shared expertise, and find inspiration to pursue their dreams. For teachers, it is a professional growth hub - an opportunity to connect with like-minded colleagues, build capacity, and elevate the standards of education in their communities.`,
     icon: Users,
     color: 'text-success',
     bgColor: 'bg-success/10',
     features: [
-      'Online platform for resource sharing',
-      'Regular teacher meetups and workshops',
-      'Peer-to-peer learning and mentoring',
-      'Curriculum development collaboration',
-      'Professional development opportunities'
+      'Teacher collaboration platform',
+      'Knowledge and best practice sharing',
+      'Professional mentorship programs',
+      'Peer learning networks',
+      'Classroom strategy exchange'
     ],
-    impact: '150+ teachers actively participating in the network'
+    impact: 'Strengthening rural education through teacher collaboration'
   },
   {
     id: 'aty',
-    title: 'ATY (Arrest Them Young)',
-    subtitle: 'Talent Identification & Nurturing',
-    description: 'Early identification and nurturing of exceptional talents in rural learners.',
-    fullDescription: 'ATY focuses on identifying and nurturing special talents in young learners - whether in academics, arts, sports, or other areas. We provide specialized training, resources, and opportunities to help these talents flourish.',
-    icon: Trophy,
+    title: 'ATY',
+    subtitle: 'Arrest Them Young',
+    description: 'Identifying and nurturing talent at the earliest stages of learning.',
+    fullDescription: `The Arrest Them Young (ATY) Program is a dynamic talent identification and nurturing initiative designed to discover and develop potential at the earliest stages of a learner's journey. Grounded in the belief that every child has unique gifts waiting to be unlocked, ATY provides a platform where learners in rural areas can explore, refine, and showcase their abilities in a supportive and engaging environment.
+
+The program goes beyond conventional learning by incorporating practical, interactive experiences that empower young minds to thrive. Through initiatives such as the Rural Edition Debates, student clubs, sporting activities, and talent showcases, ATY creates opportunities for learners to build confidence, sharpen their skills, and connect meaningfully with their peers. These activities are carefully structured to encourage critical thinking, creativity, leadership, and teamwork—qualities that are essential for both academic and personal growth.
+
+By increasing engagement through debates, public speaking, and sports, ATY addresses the challenges of limited exposure often faced by learners in rural settings. The program not only enhances academic participation but also nurtures soft skills such as communication, discipline, and resilience, preparing young people for success in diverse fields.
+
+ATY is more than a program, it is a movement to unlock hidden potential and transform rural learning spaces into hubs of talent and innovation. By identifying and nurturing abilities early, Shapers ensures that no talent goes unnoticed, and every learner has the chance to shine, grow, and contribute positively to society.`,
+    icon: Target,
     color: 'text-primary',
     bgColor: 'bg-primary/10',
     features: [
-      'Talent identification assessments',
-      'Specialized coaching and mentoring',
-      'Competition and showcase opportunities',
-      'Scholarship and sponsorship matching',
-      'Long-term talent development tracking'
+      'Talent identification initiatives',
+      'Rural Edition Debates program',
+      'Student clubs and activities',
+      'Sports and talent showcases',
+      'Soft skills development'
     ],
-    impact: '100+ talents identified and nurtured to date'
+    impact: 'Unlocking hidden potential in every rural learner'
   },
 ];
 
@@ -108,7 +134,7 @@ const Programs = () => {
               Our Programs
             </h1>
             <p className="text-xl sm:text-2xl opacity-90 max-w-3xl mx-auto">
-              Comprehensive educational solutions addressing every aspect of rural learning
+              Learning Today, Leading Tomorrow - Comprehensive educational solutions for rural communities
             </p>
           </div>
         </section>
