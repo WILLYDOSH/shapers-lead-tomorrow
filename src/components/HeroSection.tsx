@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 import heroImage from '@/assets/hero-image.jpg';
+import shapersLogo from '@/assets/shapers-logo.jpg';
 
 const HeroSection = () => {
   return (
@@ -16,10 +17,19 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div className="max-w-4xl mx-auto">
+          {/* Logo Display */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src={shapersLogo} 
+              alt="Shapers Logo" 
+              className="h-32 w-32 rounded-full shadow-gold hover:scale-105 transition-smooth"
+            />
+          </div>
+          
           {/* Main Headline */}
           <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-7xl mb-6 leading-tight">
             Learning Today,{' '}
-            <span className="text-gradient-secondary">Leading Tomorrow</span>
+            <span className="text-gradient-primary">Leading Tomorrow</span>
           </h1>
 
           {/* Subheadline */}

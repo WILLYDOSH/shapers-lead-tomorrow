@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, BookOpen } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import shapersLogo from '@/assets/shapers-logo.jpg';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,15 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center space-x-2 font-display font-bold text-xl text-gradient-primary">
-            <BookOpen className="h-8 w-8 text-primary" />
-            <span>Shapers</span>
+          <NavLink to="/" className="flex items-center space-x-3">
+            <img 
+              src={shapersLogo} 
+              alt="Shapers Logo" 
+              className="h-10 w-10 rounded-full shadow-gold"
+            />
+            <span className="text-xl font-bold text-gradient-gold">
+              Shapers
+            </span>
           </NavLink>
 
           {/* Desktop Navigation */}
