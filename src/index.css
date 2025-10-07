@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shapers Educational Design System - Empowering Rural Learners
+All colors MUST be HSL for consistency and theming.
+*/
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Gold Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    /* Luxurious Gold Palette */
+    --primary: 45 100% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 45 95% 50%;
+    --primary-dark: 45 100% 25%;
+
+    /* Elegant Black & Gold Complement */
+    --secondary: 45 20% 92%;
+    --secondary-foreground: 45 100% 25%;
+    --secondary-light: 45 25% 95%;
+    --secondary-dark: 45 15% 85%;
+
+    /* Success & Accent */
+    --success: 120 70% 50%;
+    --success-foreground: 0 0% 100%;
+    --accent: 45 95% 50%;
+    --accent-foreground: 0 0% 3.9%;
+
+    /* Neutral System */
+    --muted: 45 10% 95%;
+    --muted-foreground: 45 5% 45%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    /* Interactive States */
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 45 100% 35%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Luxurious Gold Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(45 95% 50%), hsl(45 85% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 3.9%), hsl(45 100% 15%), hsl(45 100% 25%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+
+    /* Golden Shadows */
+    --shadow-soft: 0 2px 10px -2px hsl(45 100% 35% / 0.1);
+    --shadow-medium: 0 8px 30px -5px hsl(45 100% 35% / 0.15);
+    --shadow-strong: 0 15px 40px -10px hsl(45 100% 35% / 0.2);
+    --shadow-glow: 0 0 30px hsl(45 95% 50% / 0.4);
+    --shadow-gold: 0 10px 30px -10px hsl(45 100% 35% / 0.3);
+
+    /* Spacing & Layout */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 45 95% 90%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 45 95% 90%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 45 95% 90%;
+
+    --primary: 45 95% 50%;
+    --primary-foreground: 0 0% 3.9%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 45 95% 90%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 45 20% 65%;
+
+    --accent: 45 85% 60%;
+    --accent-foreground: 0 0% 3.9%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 45 95% 50%;
+
+    /* Gold gradients for dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(45 95% 50%), hsl(45 85% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(45 85% 65%), hsl(45 75% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 3.9%), hsl(45 60% 8%), hsl(45 70% 15%));
+    --shadow-gold: 0 10px 30px -10px hsl(45 95% 50% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-secondary {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .hover-lift {
+    @apply transition-smooth hover:-translate-y-1 hover:shadow-medium;
+  }
+
+  .hover-glow {
+    @apply transition-smooth hover:shadow-glow;
+  }
+}
