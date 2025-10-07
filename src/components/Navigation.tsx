@@ -66,8 +66,8 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-card/95 backdrop-blur-md border-b shadow-soft py-4">
+            <div className="flex flex-col space-y-4 px-4">
               {navItems.map((item) => (
                 <NavLink
                   key={item.name}
