@@ -26,7 +26,7 @@ const Contact = () => {
         {/* Contact Form & Info */}
         <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
               {/* Contact Form */}
               <div>
                 <h2 className="font-display font-bold text-3xl mb-6 text-gradient-primary">
@@ -40,7 +40,7 @@ const Contact = () => {
                 <Card>
                   <CardContent className="p-8">
                     <form className="space-y-6">
-                      <div className="grid md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                         <div>
                           <label htmlFor="name" className="block text-sm font-medium mb-2">
                             Your Name
@@ -183,7 +183,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               <Card className="text-center hover-lift">
                 <CardHeader>
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
