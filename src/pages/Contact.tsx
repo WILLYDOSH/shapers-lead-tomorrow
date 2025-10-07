@@ -96,7 +96,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Our Location</h3>
                       <p className="text-muted-foreground">
-                        Nairobi, Kenya<br />
+                        Pearl Place Nanyuki<br />
                         Serving rural communities across Kenya
                       </p>
                     </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Phone</h3>
                       <p className="text-muted-foreground">
-                        +254 (0) 700 000 000<br />
+                        +254 704 967 815<br />
                         <span className="text-sm">Available Monday - Friday, 8AM - 5PM EAT</span>
                       </p>
                     </div>
@@ -141,18 +141,26 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
                   <div className="flex space-x-4">
-                    <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                      <Facebook className="h-5 w-5" />
-                    </Button>
-                    <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                      <Twitter className="h-5 w-5" />
-                    </Button>
-                    <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                      <Instagram className="h-5 w-5" />
-                    </Button>
-                    <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                      <Linkedin className="h-5 w-5" />
-                    </Button>
+                    <a href="https://www.facebook.com/shapers.ke/" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
+                        <Facebook className="h-5 w-5" />
+                      </Button>
+                    </a>
+                    <a href="https://x.com/ShapersYouth" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
+                        <Twitter className="h-5 w-5" />
+                      </Button>
+                    </a>
+                    <a href="https://www.instagram.com/shapers_youth/" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
+                        <Instagram className="h-5 w-5" />
+                      </Button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shapers-youth-network-8470b9388/" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
+                        <Linkedin className="h-5 w-5" />
+                      </Button>
+                    </a>
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
                     Stay updated with our latest programs and impact stories
@@ -241,7 +249,7 @@ const Contact = () => {
                 Where We Operate
               </h2>
               <p className="text-xl text-muted-foreground">
-                Based in Nairobi, serving rural communities across Kenya
+                Based in Nanyuki, serving rural communities across Kenya
               </p>
             </div>
 
@@ -249,7 +257,7 @@ const Contact = () => {
               <MapPin className="h-16 w-16 text-primary mx-auto mb-6" />
               <h3 className="font-display font-semibold text-2xl mb-4">Our Reach</h3>
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                While our headquarters are in Nairobi, our mobile programs reach rural 
+                While our headquarters are at Pearl Place Nanyuki, our mobile programs reach rural 
                 communities across Kenya, bringing education and opportunities directly 
                 to learners who need them most.
               </p>
