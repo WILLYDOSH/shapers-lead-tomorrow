@@ -92,13 +92,13 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
                 <p className="text-white/80">
-                  Nairobi, Kenya<br />
-                  Rural Education Centers
+                  Pearl Place Nanyuki<br />
+                  Serving communities across Kenya
                 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary flex-shrink-0" />
-                <p className="text-white/80">+254 (0) 700 000 000</p>
+                <p className="text-white/80">+254 704 967 815</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary flex-shrink-0" />
