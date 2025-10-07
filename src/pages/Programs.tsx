@@ -2,6 +2,11 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { BookOpen, Computer, Lightbulb, Eye, Users, Trophy, ArrowRight, MapPin, Clock, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import mobilib from '@/assets/mobilib.jpg';
+import mobilab from '@/assets/mobilab.jpg';
+import paragonPlaza from '@/assets/paragon-plaza.jpg';
+import inventio from '@/assets/inventio.jpg';
+import atySports from '@/assets/aty-sports.jpg';
 
 const programs = [
   {
@@ -19,6 +24,7 @@ With MobiLib, Shapers is driving equal opportunity in education - one stop at a 
     icon: BookOpen,
     color: 'text-primary',
     bgColor: 'bg-primary/10',
+    image: mobilib,
     features: [
       'Fully equipped mobile library truck',
       'Modern textbooks and learning materials',
@@ -43,6 +49,7 @@ Ultimately, MobiLab is more than a truck, it is a moving gateway to opportunity,
     icon: Computer,
     color: 'text-secondary',
     bgColor: 'bg-secondary/10',
+    image: mobilab,
     features: [
       'State-of-the-art mobile computer lab',
       'Hands-on computer training',
@@ -65,6 +72,7 @@ The Inventio Program is built on the belief that young people learn best when th
     icon: Lightbulb,
     color: 'text-accent',
     bgColor: 'bg-accent/10',
+    image: inventio,
     features: [
       'Structured industry visits',
       'Real-world learning experiences',
@@ -87,6 +95,7 @@ For learners, the Paragon Plaza opens doors to a world of possibilities. It is a
     icon: Users,
     color: 'text-success',
     bgColor: 'bg-success/10',
+    image: paragonPlaza,
     features: [
       'Teacher collaboration platform',
       'Knowledge and best practice sharing',
@@ -111,6 +120,7 @@ ATY is more than a program, it is a movement to unlock hidden potential and tran
     icon: Target,
     color: 'text-primary',
     bgColor: 'bg-primary/10',
+    image: atySports,
     features: [
       'Talent identification initiatives',
       'Rural Edition Debates program',
@@ -191,8 +201,13 @@ const Programs = () => {
                   </div>
 
                   {/* Visual/Stats */}
-                  <div className={`bg-muted/30 p-8 rounded-xl ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                    <div className="text-center">
+                  <div className={`bg-muted/30 rounded-xl overflow-hidden ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                    <img 
+                      src={program.image} 
+                      alt={program.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-8 text-center">
                       <div className={`w-24 h-24 rounded-full ${program.bgColor} flex items-center justify-center mx-auto mb-6`}>
                         <program.icon className={`h-12 w-12 ${program.color}`} />
                       </div>

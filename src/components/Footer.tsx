@@ -1,4 +1,5 @@
-import { BookOpen, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { BookOpen, Mail, Phone, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -17,17 +18,45 @@ const Footer = () => {
               with quality education and opportunities.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
-                <Facebook className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-white hover:text-secondary hover:bg-white/10"
+                asChild
+              >
+                <a href="https://x.com/ShapersYouth" target="_blank" rel="noopener noreferrer">
+                  <FaXTwitter className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
-                <Twitter className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-white hover:text-secondary hover:bg-white/10"
+                asChild
+              >
+                <a href="https://www.instagram.com/shapers_youth/" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
-                <Instagram className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-white hover:text-secondary hover:bg-white/10"
+                asChild
+              >
+                <a href="https://www.youtube.com/@shapers_youth" target="_blank" rel="noopener noreferrer">
+                  <Youtube className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
-                <Linkedin className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-white hover:text-secondary hover:bg-white/10"
+                asChild
+              >
+                <a href="https://www.facebook.com/shapers.ke/" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
