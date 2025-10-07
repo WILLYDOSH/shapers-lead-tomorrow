@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Support from "./pages/Support";
 import Contact from "./pages/Contact";
+import Leaders from "./pages/Leaders";
 import NotFound from "./pages/NotFound";
 import DevErrorBoundary from "@/components/DevErrorBoundary";
 
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/programs" element={<Programs />} />
+              <Route path="/leadership" element={<Leaders />} />
               <Route path="/support" element={<Support />} />
               <Route path="/contact" element={<Contact />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
